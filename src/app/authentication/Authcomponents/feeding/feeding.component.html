@@ -1,0 +1,95 @@
+<div class="container-scroller">
+
+    <app-auth-navbar></app-auth-navbar>
+    <div class="container-fluid page-body-wrapper">
+    
+    <app-auth-sidebar></app-auth-sidebar>
+    
+    <div class="main-panel">
+                <div class="content-wrapper">
+                  <div class = "row">
+
+                    <div class="col-md-6 grid-margin stretch-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">Watering Time  <small>(Office hours are 9am to 6pm)</small></h4>
+                            <input type="time" id="appt" name="appt"
+                              min="09:00" max="18:00" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 grid-margin stretch-card">
+                          <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">Dispencing Now</h4>
+                                <button type="submit" class="btn btn-success mr-2">OFF</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                          <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">Timer</h4>
+                              <!-- <div class="col-xs-4">
+                                <div class="form-group">
+                                  <div class="input-group timepicker">
+                                    <input type="time" class="form-control" >
+                                    <span class="input-group-addon">
+                                      <span class="fa fa-clock-o"></span>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div> -->
+                              <div class="control-group" id="fields">
+                                <label class="control-label" for="field1">Add timer here</label>
+                                <div class="controls"> 
+                                    <form role="form" autocomplete="off">
+                                        <div class="entry input-group col-xs-3">
+                                            <input class="form-control" name="fields[]" type="time" placeholder="Type something" />
+                                          <span class="input-group-btn">
+                                                <button class="btn btn-success btn-add" type="button">
+                                                    <span class="glyphicon glyphicon-plus"></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                <br>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                          <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">Quantity 1.76 Ml/Sec</h4>
+                              <input type="number">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    </div>
+
+
+                      <!-- content-wrapper ends -->
+                      <!-- partial:../../partials/_footer.html -->
+                      <footer class="footer">
+                        <div class="container-fluid clearfix">
+                          <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018
+                            <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
+                          <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with
+                            <i class="mdi mdi-heart text-danger"></i>
+                          </span>
+                        </div>
+                      </footer>
+                      <!-- partial -->
+    
+    
+    </div>
+    </div>
+    </div>
+
+
+
+
