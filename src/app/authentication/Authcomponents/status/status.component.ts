@@ -10,9 +10,8 @@ import { NgxGaugeModule } from 'ngx-gauge';
 })
 
 export class StatusComponent implements OnInit {
-  titleEC = 'my-dream-app';
   typeEC = "arch";
-  valueEC = 500;
+  valueEC = 194;
   labelEC = "EC";
   minEC = "0";
   maxEC = "2000";
@@ -23,6 +22,20 @@ export class StatusComponent implements OnInit {
   labelPH = "PH";
   minPH = "0";
   maxPH = "14";
+
+  typeWaterLv = "arch";
+  valueWaterLv = 71.8;
+  labelWaterLv = "WATER LEVEL";
+  minWaterLv = "0";
+  maxWaterLv = "100";
+  appendTextWaterLv = "°C";
+
+  typeTemp = "arch";
+  valueTemp = 46.1;
+  labelTemp = "TEMPERATURE";
+  minTemp = "0";
+  maxTemp = "100";
+  appendTextTemp = "%";
 
 
   thresholdConfigEC = {
@@ -36,6 +49,19 @@ thresholdConfigPH = {
   '0': {color: 'red'},
   '7': {color: 'blue'},
   '8': {color: 'green'},
+};
+
+thresholdConfigWater = {
+  '0': {color: 'red'},
+  '33': {color: 'blue'},
+  '66': {color: 'green'},
+};
+
+thresholdConfigTemp = {
+  '0': {color: 'blue'},
+  '25': {color: 'green'},
+  '50': {color: 'yellow'},
+  '75': {color: 'red'},
 };
 
   constructor(private ngx:NgxGaugeModule) {

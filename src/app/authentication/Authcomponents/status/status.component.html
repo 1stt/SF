@@ -12,26 +12,41 @@
                           <div class="card-body">
                             <h4 class="card-title">EC</h4>
                             <p class="card-description">ค่าความเข้มข้นของปุ๋ย</p>
-                            <div class="template-demo">
+                            <!-- <div class="template-demo">
                               <div class="flexbox">
                                 <div class="box">
                                   <div id="g6" class="gauge"></div>
                                 </div>
                               </div>
-                            </div>
+                            </div> -->
+                            <ngx-gauge [type]="typeEC"
+                              [value]="valueEC"
+                              [label]="labelEC"
+                              [min]="minEC"
+                              [max]="maxEC"
+                              [append]="appendTextEC"
+                              [thresholds]="thresholdConfigEC">
+                            </ngx-gauge>
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="card-body">
                             <h4 class="card-title">PH</h4>
                             <p class="card-description">ค่าความเป็นกรดด่างของน้ำ</p>
-                            <div class="template-demo">
+                            <!-- <div class="template-demo">
                               <div class="flexbox">
                                 <div class="box">
                                   <div id="g7" class="gauge"></div>
                                 </div>
                               </div>
-                            </div>
+                            </div> -->
+                            <ngx-gauge [type]="typePH"
+                              [value]="valuePH"
+                              [label]="labelPH"
+                              [min]="minPH"
+                              [max]="maxPH"
+                              [thresholds]="thresholdConfigPH">
+                            </ngx-gauge>
                           </div>
                         </div>
                         </div>
@@ -40,18 +55,34 @@
                           <div class="card-body">
                             <h4 class="card-title">Water Level</h4>
                             <p class="card-description">ค่าระดับน้ำที่มีอยู่ในถังผสมปุ๋ย</p>
-                            <div class="template-demo">
+                            <!-- <div class="template-demo">
                               <div id="g5" class="gauge"></div>
-                            </div>
+                            </div> -->
+                            <ngx-gauge [type]="typeWaterLv"
+                              [value]="valueWaterLv"
+                              [label]="labelWaterLv"
+                              [min]="minWaterLv"
+                              [max]="maxWaterLv"
+                              [append]="appendTextWaterLv"
+                              [thresholds]="thresholdConfigWater">
+                            </ngx-gauge>
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="card-body">
                             <h4 class="card-title">Temperature</h4>
                             <p class="card-description">ค่าอุณหภูมิของคอนโทรลเลอร์</p>
-                            <div class="template-demo">
+                            <!-- <div class="template-demo">
                               <div id="g4" class="gauge"></div>
-                            </div>
+                            </div> -->
+                            <ngx-gauge [type]="typeTemp"
+                              [value]="valueTemp"
+                              [label]="labelTemp"
+                              [min]="minTemp"
+                              [max]="maxTemp"
+                              [append]="appendTextTemp"
+                              [thresholds]="thresholdConfigTemp">
+                            </ngx-gauge>
                           </div>
                         </div>
                         </div>
@@ -79,5 +110,3 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.1/raphael-min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.js'></script>
 <script  src="/src/assets/js/ststusScript.js"></script>
-
-

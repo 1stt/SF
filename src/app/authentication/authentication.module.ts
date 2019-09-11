@@ -18,16 +18,18 @@ import { ManualComponent } from './Authcomponents/manual/manual.component';
 //import { SettingComponent } from './Authcomponents/set/setting.component';
 import { SetComponent } from './Authcomponents/set/set.component';
 //import { RouterModule } from '@angular/router';
+import { NgxGaugeModule } from 'ngx-gauge';
 
 
 @NgModule({
-  declarations: [DashboardComponent, ManageComponent, ChangePComponent, CheckInComponent, MoniterComponent, 
-    ControllerComponent, ItemComponent, Moniter1Component, Controller1Component, 
+  declarations: [DashboardComponent, ManageComponent, ChangePComponent, CheckInComponent, MoniterComponent,
+    ControllerComponent, ItemComponent, Moniter1Component, Controller1Component,
     StatusComponent, MixingComponent, FeedingComponent, ManualComponent,  SetComponent],
   imports: [
     CommonModule,
     AuthenticationRouting,
     SharedsModule,
+    NgxGaugeModule,
    // RouterModule,
 
   ]
