@@ -10,6 +10,10 @@ import { AppRouting } from './app.routing';
 import { SharedsModule } from './shareds/shareds.module';
 
 import { AlertModule } from 'ngx-bootstrap/alert';
+import { NgxGaugeModule } from 'ngx-gauge';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 @NgModule({
@@ -24,6 +28,10 @@ import { AlertModule } from 'ngx-bootstrap/alert';
     AppRouting,
     SharedsModule,
     AlertModule.forRoot(),
+    NgxGaugeModule,
+    BsDropdownModule.forRoot(),
+    TooltipModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

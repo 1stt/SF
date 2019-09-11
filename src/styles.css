@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
 .ng-invalid.ng-touched{
-    border-color: orangered; 
+    border-color: orangered;
 }
 .wrapper {
     position: relative;
@@ -30,4 +31,3 @@
   .flexbox>div {
     flex: 1 0 300px;
   }
-  

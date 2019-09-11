@@ -2,9 +2,9 @@
 
     <app-auth-navbar></app-auth-navbar>
     <div class="container-fluid page-body-wrapper">
-    
+
     <app-auth-sidebar></app-auth-sidebar>
-    
+
     <div class="main-panel">
                 <div class="content-wrapper">
                   <div class = "row">
@@ -40,22 +40,17 @@
                                   </div>
                                 </div>
                               </div> -->
-                              <div class="control-group" id="fields">
-                                <label class="control-label" for="field1">Add timer here</label>
-                                <div class="controls"> 
-                                    <form role="form" autocomplete="off">
-                                        <div class="entry input-group col-xs-3">
-                                            <input class="form-control" name="fields[]" type="time" placeholder="Type something" />
-                                          <span class="input-group-btn">
-                                                <button class="btn btn-success btn-add" type="button">
-                                                    <span class="glyphicon glyphicon-plus"></span>
-                                                </button>
-                                            </span>
-                                        </div>
-                                    </form>
-                                <br>
+                              <form #formRef="ngForm">
+                                <div *ngFor="let timer of timer; let in=index" class="col-sm-8">
+                                    <div class="form-group">
+                                      <input type="time" [(ngModel)]="timer[in].value" name="name{{in}}" class="form-control" #name="ngModel" required />
+                                    </div>
+                                    <br />
                                 </div>
-                            </div>
+                                <button [disabled]="!formRef.form.valid" (click)="add()">Add Timer</button>
+                              </form>
+                              <br />
+                              <br />
                             </div>
                           </div>
                         </div>
@@ -84,8 +79,8 @@
                         </div>
                       </footer>
                       <!-- partial -->
-    
-    
+
+
     </div>
     </div>
     </div>
