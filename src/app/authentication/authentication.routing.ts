@@ -19,7 +19,6 @@ import { SetComponent } from './Authcomponents/set/set.component';
 
 const RouteLists:Routes =[
     {path:'', redirectTo: AuthURL.Moniter,pathMatch:'full'},
-
     {path: AuthURL.Dashboard, component:DashboardComponent},
     {path: AuthURL.Manage, component:ManageComponent},
     {path: AuthURL.Change, component:ChangePComponent},
