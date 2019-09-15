@@ -13,8 +13,19 @@
                         <div class="card">
                           <div class="card-body">
                             <h4 class="card-title">Watering Time  <small>(Office hours are 9am to 6pm)</small></h4>
-                            <input type="time" id="appt" name="appt"
-                              min="09:00" max="18:00" required>
+                            <button type="submit" class="btn btn-success mr-2">OFF</button>
+                            <br>
+                            <br>
+                            <form #formRef="ngForm">
+                              <div *ngFor="let timer of timer; let in=index" class="col-sm-8">
+                                  <div class="form-group">
+                                    <input type="time" [(ngModel)]="timer[in].value" name="name{{in}}" class="form-control" #name="ngModel" required />
+                                  </div>
+                                  <br />
+                              </div>
+                              <button [disabled]="!formRef.form.valid" (click)="add()" class="btn btn-success mr-2">Add Timer</button>
+                            </form>
+                              <br><br>
                           </div>
                         </div>
                       </div>
