@@ -29,42 +29,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-6 grid-margin stretch-card">
-                          <div class="card">
-                            <div class="card-body">
-                              <h4 class="card-title">Dispencing Now</h4>
-                                <button type="submit" class="btn btn-success mr-2">OFF</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 grid-margin stretch-card">
-                          <div class="card">
-                            <div class="card-body">
-                              <h4 class="card-title">Timer</h4>
-                              <!-- <div class="col-xs-4">
-                                <div class="form-group">
-                                  <div class="input-group timepicker">
-                                    <input type="time" class="form-control" >
-                                    <span class="input-group-addon">
-                                      <span class="fa fa-clock-o"></span>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div> -->
-                              <form #formRef="ngForm">
-                                <div *ngFor="let timer of timer; let in=index" class="col-sm-8">
-                                    <div class="form-group">
-                                      <input type="time" [(ngModel)]="timer[in].value" name="name{{in}}" class="form-control" #name="ngModel" required />
-                                    </div>
-                                    <br />
-                                </div>
-                                <button [disabled]="!formRef.form.valid" (click)="add()">Add Timer</button>
-                              </form>
-                              <br />
-                              <br />
-                            </div>
-                          </div>
-                        </div>
+
                         <div class="col-md-6 grid-margin stretch-card">
                           <div class="card">
                             <div class="card-body">
